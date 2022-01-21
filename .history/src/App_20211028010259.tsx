@@ -13,14 +13,14 @@ export interface IState {
 }
 
 function App() {
-  const [people, setPeople] = useState<IState["people"]>([
+  const [people, setPeople] = useState([
     {
       name: "LeBron James",
       url: "https://cdnmedia.webthethao.vn/uploads/2021-06-10/LeBron-James-no6-jersey-swap-1.jpeg",
       age: 46,
       note: "LeBron James sẽ đổi số áo, quyết theo đuổi con số ưa thích từ thời Miami Heat",
     },
-  ]);
+  ] as IState["people"]);
 
   return (
     <div className="App">

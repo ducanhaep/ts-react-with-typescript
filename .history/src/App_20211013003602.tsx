@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import logo from "./logo.svg";
 import "./App.css";
 import List from "./components/List";
-import AddToList from "./components/AddToList";
 
-export interface IState {
+interface IState {
   people: {
     name: string;
     age: number;
@@ -25,7 +25,6 @@ function App() {
   return (
     <div className="App">
       <List people={people} />
-      <AddToList people={people} setPeople={setPeople} />
     </div>
   );
 }

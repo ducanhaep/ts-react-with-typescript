@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <List people={people} />
-      <AddToList people={people} setPeople={setPeople} />
+      <AddToList />
     </div>
   );
 }
